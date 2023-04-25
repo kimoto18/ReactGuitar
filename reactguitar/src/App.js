@@ -1,4 +1,6 @@
 import logo from './GuitarLogo.jpg';
+import fret from './fretboard.png';
+import electric from './electric.jpg';
 import './App.css';
 import Chord from 'react-js-guitar-chords';
 import GuitarChord from 'react-guitar-chords';
@@ -11,7 +13,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1>Guitarly</h1>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="logo" alt="logo" />
+        <img src={electric} className='electric' alt='electric'/>
       </header>
     <article>
       <h3>Welcome to Guitarly!</h3>
@@ -31,7 +34,17 @@ function App() {
         <GuitarChord frets={['x',2,4,4,4,2]} chordName="B Major"/>
         </div>
       </body>
-      <body className='Minor'>
+    <body className='Sharp'>
+    <div className='Sha'><h2>Sharp Chords</h2>
+    <GuitarChord frets={['x',4,6,6,6,4]} chordName="C Sharp"/>
+    <GuitarChord frets={['x',1,3,3,3,1]} chordName="A Sharp"/>
+    <GuitarChord frets={[4,6,6,5,6,6]} chordName="G Sharp"/>
+    <GuitarChord frets={[2,4,4,3,2,2]} chordName="F Sharp"/>
+    <GuitarChord frets={['x','x',1,3,4,3]} chordName="D Sharp"/>
+    </div>
+    <img src={fret} className="fret" alt="fret"></img>
+    </body>
+    <body className='Minor'>
     <div className='Min'><h2>Minor Chords</h2>
         <GuitarChord frets={['x',3,5,5,4,3]} chordName="C Minor"/>
         <GuitarChord frets={['x',0,2,2,1,0]} chordName="A Minor"/>
@@ -40,15 +53,6 @@ function App() {
         <GuitarChord frets={[1,3,3,1,1,1]} chordName="F Minor"/>
         <GuitarChord frets={['x','x',0,2,3,1]} chordName="D Minor"/>
         <GuitarChord frets={['x',2,4,4,3,2]} chordName="B Minor"/>
-    </div>
-    </body>
-    <body className='Sharp'>
-    <div className='Sha'><h2>Sharp Chords</h2>
-    <GuitarChord frets={['x',4,6,6,6,4]} chordName="C Sharp"/>
-    <GuitarChord frets={['x',1,3,3,3,1]} chordName="A Sharp"/>
-    <GuitarChord frets={[4,6,6,5,6,6]} chordName="G Sharp"/>
-    <GuitarChord frets={[2,4,4,3,2,2]} chordName="F Sharp"/>
-    <GuitarChord frets={['x','x',1,3,4,3]} chordName="D Sharp"/>
     </div>
     </body>
   </div>

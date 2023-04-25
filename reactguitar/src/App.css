@@ -2,17 +2,53 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 250px;
-  pointer-events: none;
-  margin-bottom: 30px;
+img.fret {
+  margin-top: 100px;
+  border: 2px solid black;
+}
+
+img.electric {
+  width: 450px;
+  height: 300px;
+  position: relative;
+  float: left;
+  animation: Moveelectric 1.5s;
+  border: 2px solid teal;
+  border-radius: 40px;
+}
+@keyframes Moveelectric{
+  from{
+      left: -1000px;
+      top: 0px;
+  }
+  to{
+      left:375px;
+      top:0;
+  }
+}
+
+img.logo {
+  width: 450px;
+  height: 300px;
+  position: relative;
+  float: left;
+  animation: Movelogo 1.5s;
   border: 2px solid teal;
   border-radius: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    
+img.logo:hover{
+  transform: rotate(-3deg);
+}
+
+@keyframes Movelogo{
+  from{
+      left: -1000px;
+      top: 0px;
+  }
+  to{
+      left:-350px;
+      top:0;
   }
 }
 
@@ -71,4 +107,9 @@ h1{
 
 body{
   background-color: grey;
+}
+
+svg > text{
+  font-size: larger;
+  fill:teal;
 }
