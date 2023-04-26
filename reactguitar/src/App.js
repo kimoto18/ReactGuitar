@@ -60,6 +60,7 @@ function App() {
         <GuitarChord frets={['x',2,4,4,3,2]} chordName="B Minor"/>
     </div>
     </body>
+    
   </div>
 </div>
     

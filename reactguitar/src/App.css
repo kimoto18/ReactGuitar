@@ -80,9 +80,10 @@ img.fret{
   margin-bottom: 50px;
 }
 
-body p{
+body h2{
   font-weight: 1000;
 }
+
 
 @keyframes Movefret{
   from{
