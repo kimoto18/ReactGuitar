@@ -14,6 +14,8 @@ img.fret {
 img.Header {
   height: 150px;
   margin-bottom: 30px;
+  border: 2px solid teal;
+  border-radius: 10px;
 }
 
 img.electric {
@@ -75,6 +77,11 @@ img.fret{
   animation: Movefret 1.5s;
   border: 1px solid black;
   border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+body p{
+  font-weight: 1000;
 }
 
 @keyframes Movefret{
@@ -94,6 +101,7 @@ article p{
   color: black;
   font-weight: 500;
 }
+
 
 h1{
   color:teal;
@@ -131,6 +139,7 @@ h3{
   color:teal;
   font-size: medium;
 }
+
 
 .Maj{
   margin: auto;

@@ -47,6 +47,7 @@ function App() {
     <GuitarChord frets={['x','x',1,3,4,3]} chordName="D Sharp"/>
     </div>
     <img src={fret} className="fret" alt="fret"></img>
+    <h2>More coming soon!!!</h2>
     </body>
     <body className='Minor'>
     <div className='Min'><h2>Minor Chords</h2>
