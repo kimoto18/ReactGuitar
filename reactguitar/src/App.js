@@ -1,6 +1,7 @@
 import logo from './GuitarLogo.jpg';
 import fret from './fretboard.png';
 import electric from './electric.jpg';
+import Header from './Header.png'
 import './App.css';
 import Chord from 'react-js-guitar-chords';
 import GuitarChord from 'react-guitar-chords';
@@ -8,15 +9,18 @@ import GuitarChord from 'react-guitar-chords';
 <head>
     <title>Guitarly</title>
 </head>
+
 function App() {
   return (
     <div className="App">
+      <img src={Header} className='Header' alt='Header'/>
       <header className="App-header">
-      <h1>Guitarly</h1>
-        <img src={logo} className="logo" alt="logo" />
-        <img src={electric} className='electric' alt='electric'/>
+      <anchor>
+    <img src={logo} className="logo" alt="logo" />
+      <img src={electric} className='electric' alt='electric'/>
+  </anchor>
       </header>
-    <article>
+    <article className='head'>
       <h3>Welcome to Guitarly!</h3>
         <p>The idea of learning how to play the guitar can be very intimidating, especially if this is the first musical instrument you’re learning how to play. It’s totally normal for you to have a lot of questions about the entire process, but we’re here to help push you in the right direction on your Guitarly journey! </p>
         <p>The options for guitars targeted towards beginners is almost endless, and considering that no guitar plays the same, narrowing down what type of guitar you want to purchase can be a difficult choice to make. The type/brand/make/model of guitar that you purchase will have a huge influence on your development and progress as a musician, as there are some guitars out there that are easy to play and there are other guitars that are more difficult to play.</p>

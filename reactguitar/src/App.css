@@ -2,19 +2,34 @@
   text-align: center;
 }
 
+.pic{
+  float: left;
+}
+
 img.fret {
   margin-top: 100px;
   border: 2px solid black;
 }
 
+img.Header {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
 img.electric {
-  width: 450px;
+  width: 45%;
   height: 300px;
   position: relative;
   float: left;
+  left: -475px;
   animation: Moveelectric 1.5s;
   border: 2px solid teal;
   border-radius: 40px;
+}
+
+img.electric:hover{
+  transform: rotate(-3deg);
+
 }
 @keyframes Moveelectric{
   from{
@@ -22,16 +37,17 @@ img.electric {
       top: 0px;
   }
   to{
-      left:375px;
+      left:-475px;
       top:0;
   }
 }
 
 img.logo {
-  width: 450px;
+  width: 45%;
   height: 300px;
   position: relative;
   float: left;
+  left:550px;
   animation: Movelogo 1.5s;
   border: 2px solid teal;
   border-radius: 40px;
@@ -47,7 +63,27 @@ img.logo:hover{
       top: 0px;
   }
   to{
-      left:-350px;
+      left:550px;
+      top:0;
+  }
+}
+
+img.fret{
+  position: relative;
+  float: left;
+  left:30px;
+  animation: Movefret 1.5s;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+@keyframes Movefret{
+  from{
+      left: 30px;
+      top: 800px;
+  }
+  to{
+      left:30px;
       top:0;
   }
 }
@@ -55,6 +91,8 @@ img.logo:hover{
 article p{
   margin-left: 70px;
   margin-right: 70px;
+  color: black;
+  font-weight: 500;
 }
 
 h1{
@@ -62,8 +100,13 @@ h1{
   font-family: Arial;
 }
 
+h3{
+  color: teal;
+  font-family: Arial;
+}
+
 .App-header {
-  background-color: gray;
+  background-color: #676767;
   min-height: 100px;
   display: flex;
   flex-direction: column;
@@ -106,7 +149,7 @@ h1{
 }
 
 body{
-  background-color: grey;
+  background-color: #676767;
 }
 
 svg > text{
